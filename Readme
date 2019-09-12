@@ -1,0 +1,27 @@
+Source code of exact diagonalization (ED)£¬version 1.0
+Copyright (C) 2019-09 Hanqing Wu
+
+Features
+
+(1)written in Fortran;
+(2)contains both Full ED and Lanczos ED;
+(3)aiming at solving interacting spin models on finite-size lattices;
+(4)total Sz conserved symmetry is used to do the block diagonalization;
+(5)it is portable without linking some external libraries;
+(6)It is serial code and is easier for the beginner.
+
+Installation and compilation
+
+You need to install a Fortran complier first! I suggest you to install intel fortran complier, because gfortran may not recognize the sentence like "write(ErrMsg, "('****')")". Make sure you have read some instructions in the soure code before you running the code.
+
+Linux
+(1)create a directory and then copy the code into directory;
+(2)include other ".f90" files at the head of "Main.f90" file (please read the sentences marked by "!!!" carefully in the "Main.f90" file).
+(3)command "ifort -O3 Main.f90 -o ED" or "gfortran Main.f90 -o ED" to complie;
+(4)command "./ED" to run the code.
+
+Windows
+(1)create an empty project with visual studio;
+(2)add the source code to this project;
+(3)"Build¡° the project and then run the code.
+
