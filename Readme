@@ -27,5 +27,5 @@ the sentences marked by "!!!" carefully in the "Main.f90" file).
 Windows
 (1)create an empty project with visual studio;
 (2)add the source code to this project;
-(3)"Build¡° the project and then run the code.
+(3)"Build" the project and then run the code.
 
